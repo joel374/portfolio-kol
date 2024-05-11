@@ -65,10 +65,32 @@ export default function About() {
           width: '100wv',
           height: '100vh',
         }}>
-          <div style={{ display: "flex", width: '70%', gap: '60px', }}>
+          <div style={{
+            width: '70%', gap: '60px',
+            display: 'flex',
+            ...{
+              [`@media (max-width: 768px)`]: {
+                display: 'block' // for small screens (sm)
+              },
+              [`@media (min-width: 768px) and (max-width: 1024px)`]: {
+                display: 'block' // for medium-sized screens (md)
+              },
+              [`@media (min-width: 1025px) `]: {
+                display: 'flex'
+              }
+            }
+          }}>
             <div style={{ position: 'relative', width: '50%' }}>
               <div style={{ border: `1px solid black`, display: 'inline-flex', backgroundColor: 'white', padding: '20px 20px 60px 20px', position: 'relative', zIndex: 2 }}>
-                <img id="image" width={'300px'} style={{ border: `1px solid black` }} src="https://img.freepik.com/premium-psd/cat-with-blue-eyes-sits-white-transparent-background_540808-60.jpg?w=740" alt="" />
+                <img id="image" width={'300px'} style={{
+                  border: `1px solid black`,
+                  width: '100%', // Setting width to 100%
+                  ...{
+                    ['@media (max-width: 768px)']: {
+                      width: '50%', // Adjusting width for small screens (sm)
+                    }
+                  },
+                }} src="https://img.freepik.com/premium-psd/cat-with-blue-eyes-sits-white-transparent-background_540808-60.jpg?w=740" alt="" />
               </div>
               <div style={{ border: `1px solid black`, display: 'inline-flex', backgroundColor: 'white', padding: '20px 20px 60px 20px', position: 'absolute', top: 0, left: 0, width: `${imageDimensions.width}px`, height: `${imageDimensions.height}px`, zIndex: 1, transform: 'rotate(-10deg)' }}>
               </div>
@@ -107,7 +129,7 @@ export default function About() {
           <div style={{
             width: '80%', height: 'auto', display: 'grid',
             gridTemplateColumns: '1fr 1fr 1fr',
-            gap:'30px'
+            gap: '30px'
           }}>
             <div>
               {
