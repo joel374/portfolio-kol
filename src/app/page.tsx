@@ -105,15 +105,15 @@ export default function About() {
                   <p style={{ marginBottom: 0 }}>Hi! Everyone call me</p>
                   <h1 style={{ marginTop: 0, fontWeight: 'bolder' }}>Kolose</h1>
                 </div>
-                <p>Majoring in Architecture at Bina Nusantara University
-                  and currently a Visual Design Student at Purwadhika.
-                  I am interested in making creative things.
+                <p>I am a Designer who is very enthusiastic about
+                  designing various things, be it posters, infographics,
+                  or logos. I enjoy designing in any genre and theme,
+                  such as Retro, Vintage, Traditional, and Modern.
                 </p>
                 <p>
-                  I am enjoy working with people and willing to try and
-                  learn a new things. Bringing forth a motivated attitude
-                  as an active and cheerful person. I believe i can
-                  deliver a message through visual.
+                  My designs follow a simple, clean, and enjoyable
+                  system. I also strive to design according to my
+                  clients' preferences as much as possible.
                 </p>
               </div>
             </div>
